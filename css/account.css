@@ -392,7 +392,7 @@ footer{
 
 .footer-top, .footer-middle{
     background: var(--header-color);
-    color:  rgba(229,223,217,.15);
+    color: var(--text-color-fade);
     width: 100%;
     padding: 2rem;
 }
@@ -435,7 +435,7 @@ footer{
     padding: 30px 10px;
     width: 100%;
     font-size: 15px;
-    color: rgba(229,223,217,.15);
+    color: var(--text-color-fade);
 }
 .footer-bottom{
     background: var(--header-color);
