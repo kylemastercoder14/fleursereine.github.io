@@ -36,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 :root {
     /* COLORS */
 
@@ -61,7 +65,7 @@ header {
     background: var(--header-color);
     width: 100%;
     height: 70px;
-    z-index: 999;
+    z-index: 99;
 }
 
 .header-container {
@@ -89,7 +93,7 @@ header {
     width: 30px;
     height: 10px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 999;
 }
 
 .menu-icon .line1,
@@ -123,6 +127,84 @@ header {
     font-weight: 700;
 }
 
+/* MENU ITEMS */
+
+.menu-items {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: translateX(1000px);
+    opacity: 0;
+    z-index: 999;
+}
+
+.close-toggle {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.close-toggle .line1,
+.close-toggle .line2 {
+    width: 100%;
+    height: 2.5px;
+    background: var(--text-color-fade);
+}
+
+.close-toggle .line1 {
+    transform: translate3d(0, 8px, 0) rotate(45deg);
+}
+
+.close-toggle .line2 {
+    margin: 5px 0;
+    transform: translate3d(0, 0, 0) rotate(135deg);
+}
+
+.menu-container {
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.menu-lists li {
+    padding: 10px 10px 10px 20px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.menu-lists li a {
+    font-size: 18px;
+    color: var(--text-color-fade);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.contact-info h3 {
+    margin: 25px 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--text-color-fade);
+}
+
+.contact-info span {
+    font-weight: 300;
+    margin-left: 5px;
+}
+
+
+
+
+
 /* ACCOUNT SECTION */
 
 .account-container {
@@ -154,7 +236,7 @@ header {
     border: 1px solid var(--header-color);
     color: var(--header-color);
     position: relative;
-    padding: 12px 15px;
+    padding: 12px 20px;
     cursor: pointer;
     transition: .2s ease;
 }
@@ -178,7 +260,8 @@ header {
     color: grey;
 }
 
-.or, .account-text{
+.or,
+.account-text {
     display: block;
     color: var(--header-color);
     font-size: 16px;
@@ -187,8 +270,8 @@ header {
     margin: 28px 0;
 }
 
-.continue{
-    font-size: 20px!important;
+.continue {
+    font-size: 20px !important;
     color: var(--text-color-fade);
     letter-spacing: 2px;
     margin-bottom: 20px;
@@ -199,7 +282,7 @@ header {
     margin: auto;
 }
 
-.input{
+.input {
     background: #fff;
     border: unset;
     outline: none;
@@ -214,22 +297,23 @@ header {
     color: var(--text-color-fade);
 }
 
-.flex{
+.flex {
     flex-direction: column;
     display: flex;
 }
-.flex-group{
+
+.flex-group {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.birth{
+.birth {
     width: 100%;
 }
 
-.label{
+.label {
     font-size: 14px;
     font-weight: 400;
     line-height: 19px;
@@ -239,11 +323,11 @@ header {
     margin-bottom: 10px;
 }
 
-.check{
+.check {
     width: 50%;
 }
 
-.flex-check{
+.flex-check {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -251,7 +335,7 @@ header {
     margin-bottom: 30px;
 }
 
-.check-text{
+.check-text {
     display: block;
     font-weight: 300;
     font-size: 16px;
@@ -261,7 +345,7 @@ header {
     margin-top: 10px;
 }
 
-.choose{
+.choose {
     color: var(--text-color-fade);
     font-size: 14px;
     font-weight: 300;
@@ -269,12 +353,13 @@ header {
     line-height: 1.4;
     margin-bottom: 30px;
 }
-.choose a{
+
+.choose a {
     text-decoration: underline;
     color: black;
 }
 
-.account-btn{
+.account-btn {
     background: var(--header-color);
     border: none;
     color: #e5dfd9;
