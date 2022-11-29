@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    
+
 
     <!-- HEADER SECTION -->
     <!-- SMALLER SCREEN -->
 
     <header>
         <div class="header-container">
-            <a href="javascript:void(0)" class="menu-toggle">
+            <a href="javascript:void(0)" class="menu-toggle" onclick="open_menu()">
                 <div class="menu-icon">
                     <div class="line1 no-animation"></div>
                     <div class="line2 no-animation"></div>
@@ -49,6 +49,31 @@
                 </a>
             </div>
         </div>
+
+        <div class="menu-items">
+            <div class="close-toggle" onclick="close_menu()">
+                <div class="line1"></div>
+                <div class="line2"></div>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-lists">
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Handbags</a></li>
+                    <li><a href="">Men</a></li>
+                    <li><a href="">Women</a></li>
+                    <li><a href="">Watches</a></li>
+                    <li><a href="">Beauty</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <hr>
+                <div class="contact-info">
+                    <h3>Ship to: <span>Philippines</span></h3>
+                    <h3>Language: <span>English</span></h3>
+                    <h3>Contact Number: <span>+639 152479693</span></h3>
+                    <h3>Store Hours: <span>24/7 Services</span></h3>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- ACCOUNT SECTION -->
@@ -65,15 +90,15 @@
                 <img src="images/icons/fb.png" alt="facebook">
                 <span>CONTINUE WITH FACEBOOK</span>
             </a>
-    
+
             <p class="or">OR</p>
-    
+
             <p class="continue">Continue with your email address</p>
-    
+
             <p class="account-text">Sign in with your FLEUR SEREINE email and password or create a profile if you are
                 new.
             </p>
-    
+
             <form action="">
                 <div class="input-field">
                     <input type="email" class="input" name="email" placeholder="EMAIL*">
@@ -98,17 +123,25 @@
                 </div>
                 <div class="input-field flex-check">
                     <input type="checkbox" class="input check" name="agree" id="">
-                    <span class="check-text">I would like to receive updates (including by email, SMS, social media, phone, physical letter) about FLEUR SEREINE new activities, exclusive products, tailored services and to have a personalized client experience based on my interests.</span>
+                    <span class="check-text">I would like to receive updates (including by email, SMS, social media,
+                        phone, physical letter) about FLEUR SEREINE new activities, exclusive products, tailored
+                        services and to have a personalized client experience based on my interests.</span>
                 </div>
 
-                <p class="choose">By choosing "Create my profile", you confirm that you have read and understood our <a href="#">privacy policy</a>, and that you want to create your FLEUR SEREINE profile.</p>
-    
+                <p class="choose">By choosing "Create my profile", you confirm that you have read and understood our <a
+                        href="#">privacy policy</a>, and that you want to create your FLEUR SEREINE profile.</p>
+
                 <button class="account-btn">Continue</button>
             </form>
         </div>
     </section>
 
+    <!-- JQUERY CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- GSAP -->
+    <script src="frameworks/gsap/gsap.min.js"></script>
     <!-- CUSTOM JS -->
+    <script src="js/script.js"></script>
 
 </body>
 
