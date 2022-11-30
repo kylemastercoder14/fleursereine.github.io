@@ -38,13 +38,13 @@
 
             <!-- ICONS -->
             <div class="header-icons">
-                <a href="#" class="cart-icon">
+                <a href="javascript:void(0)" class="cart-icon" onclick="open_cart(), close_save()">
                     <i class='bx bx-shopping-bag'></i>
                 </a>
-                <a href="#" class="save-icon">
+                <a href="#" class="save-icon" onclick="open_save(), close_cart()">
                     <i class='bx bx-heart'></i>
                 </a>
-                <a href="#" class="search-icon">
+                <a href="#" class="search-icon" onclick="open_search()">
                     <i class='bx bx-search'></i>
                 </a>
             </div>
@@ -75,6 +75,78 @@
             </div>
         </div>
     </header>
+
+    <!-- CART POP UP -->
+
+    <div class="cart" id="cart-modal">
+        <div class="close-cart" onclick="close_cart()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+        <div class="cart-container">
+            <h1 class="cart-title">Shopping Bag</h1>
+            <p class="cart-empty">Currently Empty</p>
+        </div>
+    </div>
+
+    <!-- SAVED POP UP -->
+
+    <div class="save" id="save-modal">
+        <div class="close-save" onclick="close_save()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+        <div class="save-container">
+            <h1 class="save-title">Saved Items</h1>
+            <p class="save-empty">Currently Empty</p>
+        </div>
+    </div>
+
+    <!-- SEARCH POP UP -->
+
+    <div class="search" id="search-modal">
+        <div class="search-container">
+            <div class="search-content">
+                <div class="search-group-content">
+                    <i class="bx bx-search icon-search"></i>
+                    <input class="search-input" type="text" placeholder="What are you looking for?">
+                </div>
+                <span class="close-search" onclick="close_search()">CANCEL</span>
+            </div>
+
+            <div class="search-trending">
+                <div class="search-category">
+                    <h3 class="search-title">TRENDING SEARCHES</h3>
+                    <div class="search-group">
+                        <i class="bx bx-search"></i>
+                        <h3 class="search-name">Handbags</h3>
+                    </div>
+    
+                    <div class="search-group">
+                        <i class="bx bx-search"></i>
+                        <h3 class="search-name">Shoes</h3>
+                    </div>
+    
+                    <div class="search-group">
+                        <i class="bx bx-search"></i>
+                        <h3 class="search-name">Belts</h3>
+                    </div>
+    
+                    <div class="search-group">
+                        <i class="bx bx-search"></i>
+                        <h3 class="search-name">Purses</h3>
+                    </div>
+                </div>
+    
+                <div class="search-new">
+                    <h3 class="search-title">WHAT'S NEW</h3>
+                    <h3 class="search-name">Women</h3>
+                    <h3 class="search-name">Men</h3>
+                    <h3 class="search-name">Fleur Sereine Beloved</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- ACCOUNT SECTION -->
 
